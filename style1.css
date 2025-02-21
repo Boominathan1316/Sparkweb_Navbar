@@ -157,3 +157,54 @@ nav a:hover{
     background-color:darkgray;
 }
 
+
+/* Clients Section Styling */
+.clients-section {
+    background-color: #f8f9fa;
+}
+
+/* Marquee Container */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.marquee {
+    display: flex;
+    animation: marqueeScroll 15s linear infinite;
+}
+
+.marquee img {
+    max-width: 120px;
+    margin: 0 20px;
+    min-width: 200px;
+min-height: 200px;
+max-height:200px;
+object-fit: cover;
+    /* filter: brightness(0) invert(1); Adjust if needed */
+}
+
+/* Marquee Animation */
+@keyframes marqueeScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); } /* Adjust for smooth looping */
+}
+
+/* Swiper Styling */
+.clients-slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-slider img {
+    max-width: 120px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clients-slider img:hover {
+    transform: scale(1.1);
+}
