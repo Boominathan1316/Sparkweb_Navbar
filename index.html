@@ -150,6 +150,10 @@
 </section>
 
 
+
+
+
+
 <section class="food-showcase py-5">
     <div class="container">
         <div class="text-center mb-5">
@@ -249,11 +253,61 @@
                 <div class="swiper-slide"><img src="bn15.jpg" alt="Brand 3"></div>
                 <div class="swiper-slide"><img src="bn16.jpg" alt="Brand 4"></div>
                 <div class="swiper-slide"><img src="bn17.jpg" alt="Brand 5"></div>
-
-           
+                <div class="swiper-slide"><img src="bn21.jpg" alt="Brand 6"></div>
+                <div class="swiper-slide"><img src="bn18.jpg" alt="Brand 7"></div>
+                         
         </div>
     </div>
 </section>
+
+<div class="features_slider mt-4">
+    <div class="features-wrapper">
+        <div class="features-slide">
+            <div class="card">
+                <img src="fd1.png" alt="Fast Delivery">
+                <h5 class="card-title">🚀 Fast Delivery</h5>
+                <p class="card-text">Get your favorite meals delivered hot and fresh in under 30 minutes.</p>
+            </div>
+        </div>
+        <div class="features-slide">
+            <div class="card">
+                <img src="hc.jpg" alt="Healthy Options">
+                <h5 class="card-title">🥗 Healthy Choices</h5>
+                <p class="card-text">Enjoy a variety of nutritious meals, including vegan and gluten-free options.</p>
+            </div>
+        </div>
+        <div class="features-slide">
+            <div class="card">
+                <img src="ms.jpg" alt="Customized Meals">
+                <h5 class="card-title">🍽️ Customized Meals</h5>
+                <p class="card-text">Create your own meal with our customizable menu options.</p>
+            </div>
+        </div>
+        <div class="features-slide">
+            <div class="card">
+                <img src="gd1.jpg" alt="Gourmet Dishes">
+                <h5 class="card-title">🍷 Gourmet Delights</h5>
+                <p class="card-text">Indulge in premium, chef-crafted dishes made with high-quality ingredients.</p>
+            </div>
+        </div>
+        <div class="features-slide">
+            <div class="card">
+                <img src="eg.jpg" alt="Catering Services">
+                <h5 class="card-title">🎉 Event Catering</h5>
+                <p class="card-text">From small gatherings to corporate events, we provide top-notch catering services.</p>
+            </div>
+        </div>
+        <div class="features-slide">
+            <div class="card">
+                <img src="db.jpg" alt="Desserts & Beverages">
+                <h5 class="card-title">🍰 Desserts & Beverages</h5>
+                <p class="card-text">Satisfy your cravings with our delicious desserts and refreshing drinks.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 <section class="faq-section py-5">
@@ -364,6 +418,30 @@ var swiper = new Swiper(".clients-slider", {
     menu.addEventListener('click', () => {
         menuList.classList.toggle('showmenu')
     })
+    document.addEventListener('DOMContentLoaded', function() {
+    const wrapper = document.querySelector('.features-wrapper');
+    const slides = document.querySelectorAll('.features-slide');
+    let currentIndex = 0;
+
+    const firstSlideClone = slides[0].cloneNode(true);
+    wrapper.appendChild(firstSlideClone);
+
+    function slideNext() {
+        currentIndex++;
+        wrapper.style.transform = `translateX(-${currentIndex * 20}%)`;
+        wrapper.style.transition = 'transform 0.5s ease-in-out';
+
+        if (currentIndex === slides.length) {
+            setTimeout(() => {
+                wrapper.style.transition = 'none';
+                currentIndex = 0;
+                wrapper.style.transform = `translateX(0)`;
+            }, 500);
+        }
+    }
+
+    setInterval(slideNext, 2000);
+});
 </script>
 </body>
 </html>
