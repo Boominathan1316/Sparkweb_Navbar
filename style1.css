@@ -333,4 +333,14 @@ calc(240*5)
 .card-text {
     font-size: 0.9rem;
     color: #666;
+}@media (max-width: 1024px) {
+    .features-slide { flex: 0 0 33.33%; }
+}
+
+@media (max-width: 768px) {
+    .features-slide { flex: 0 0 50%; }
+}
+
+@media (max-width: 480px) {
+    .features-slide { flex: 0 0 100%; }
 }

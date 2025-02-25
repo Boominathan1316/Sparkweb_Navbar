@@ -253,8 +253,6 @@
                 <div class="swiper-slide"><img src="bn15.jpg" alt="Brand 3"></div>
                 <div class="swiper-slide"><img src="bn16.jpg" alt="Brand 4"></div>
                 <div class="swiper-slide"><img src="bn17.jpg" alt="Brand 5"></div>
-                <div class="swiper-slide"><img src="bn21.jpg" alt="Brand 6"></div>
-                <div class="swiper-slide"><img src="bn18.jpg" alt="Brand 7"></div>
                          
         </div>
     </div>
@@ -418,17 +416,22 @@ var swiper = new Swiper(".clients-slider", {
     menu.addEventListener('click', () => {
         menuList.classList.toggle('showmenu')
     })
-    document.addEventListener('DOMContentLoaded', function() {
+   
+document.addEventListener('DOMContentLoaded', function() {
     const wrapper = document.querySelector('.features-wrapper');
     const slides = document.querySelectorAll('.features-slide');
     let currentIndex = 0;
+    let slideWidth = slides[0].clientWidth;
 
-    const firstSlideClone = slides[0].cloneNode(true);
-    wrapper.appendChild(firstSlideClone);
+    const updateSlideWidth = () => {
+        slideWidth = slides[0].clientWidth;
+    };
 
+    window.addEventListener('resize', updateSlideWidth);
+    
     function slideNext() {
         currentIndex++;
-        wrapper.style.transform = `translateX(-${currentIndex * 20}%)`;
+        wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
         wrapper.style.transition = 'transform 0.5s ease-in-out';
 
         if (currentIndex === slides.length) {
