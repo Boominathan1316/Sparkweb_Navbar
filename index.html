@@ -13,8 +13,11 @@
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 
     <title>Nav Bar Demo</title>
+    <link rel="shortcut icon" href="bn30.png"/>
 </head>
 
 <body>
@@ -150,6 +153,138 @@
 </section>
 
 
+<!-- Food Menu List Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-0 gx-5 align-items-end">
+            <div class="col-lg-6">
+                <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                    <h1 class="mb-3">Explore Our Delicious Menu</h1>
+                    <p>Indulge in a variety of mouth-watering dishes made with the freshest ingredients.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                    <li class="nav-item me-2">
+                        <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">Popular</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">Desserts</a>
+                    </li>
+                    <li class="nav-item me-0">
+                        <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">Beverages</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="food-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid uniform-img" src="mp.jpg" alt="Pizza"></a>
+                                <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                    Special</div>
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                    Margherita Pizza</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">₹350</h5>
+                                <p><i class="fa fa-star text-primary me-2"></i>Classic Italian delight with fresh basil & mozzarella.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="food-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid uniform-img" src="chb.jpg" alt="Burger"></a>
+                                <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                    Bestseller</div>
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                    Cheeseburger</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">₹250</h5>
+                                <p><i class="fa fa-star text-primary me-2"></i>Juicy beef patty with melted cheese & fresh veggies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="food-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid uniform-img" src="cap.jpg" alt="Pasta"></a>
+                                <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                    Recommended</div>
+                                <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                    Creamy Alfredo Pasta</div>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">₹400</h5>
+                                <p><i class="fa fa-star text-primary me-2"></i>Rich & creamy pasta with parmesan cheese.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tab-2" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="food-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid uniform-img" src="cake.jpg" alt="Cake"></a>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">₹200</h5>
+                                <p><i class="fa fa-star text-primary me-2"></i>Chocolate Lava Cake - A gooey chocolate treat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="food-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid uniform-img" src="ice.jpg" alt="Ice Cream"></a>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">₹150</h5>
+                                <p><i class="fa fa-star text-primary me-2"></i>Vanilla Ice Cream with caramel drizzle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="tab-3" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="food-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid uniform-img" src="coffee.jpg" alt="Coffee"></a>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">₹120</h5>
+                                <p><i class="fa fa-star text-primary me-2"></i>Freshly brewed Cappuccino.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="food-item rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <a href=""><img class="img-fluid uniform-img" src="milkshake.jpg" alt="Milkshake"></a>
+                            </div>
+                            <div class="p-4 pb-0">
+                                <h5 class="text-primary mb-3">₹180</h5>
+                                <p><i class="fa fa-star text-primary me-2"></i>Chocolate Milkshake - Smooth & creamy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Food Menu List End -->
 
 
 
@@ -446,5 +581,11 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(slideNext, 2000);
 });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+   setInterval(()=>{ console.clear()},1000)
+</script>
+
 </body>
 </html>

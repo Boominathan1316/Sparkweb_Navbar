@@ -344,3 +344,55 @@ calc(240*5)
 @media (max-width: 480px) {
     .features-slide { flex: 0 0 100%; }
 }
+
+.food-item {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.food-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    height: 160px;
+}
+
+.food-item:hover img {
+    transform: scale(1.05);
+}
+
+.food-item .bg-primary {
+    background-color: #ff5722 !important; /* Custom primary color */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.food-item .bg-white {
+    background-color: #fff !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.food-item .p-4 {
+    padding: 16px;
+}
+
+.food-item h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.food-item p {
+    font-size: 14px;
+    color: #555;
+}
